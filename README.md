@@ -1,57 +1,67 @@
-# Fitness Tracker Api
+# 💪 Fitness Tracker API
 
-API REST desenvolvida em Java para gerenciamento de treinos e exercícios.
-O sistema permite cadastro de usuários, autenticação e controle de treinos diários.
+API REST desenvolvida em Java com Spring Boot para gerenciamento de alunos de treino.
+
+O projeto implementa operações CRUD completas com validação de dados, seguindo boas práticas de desenvolvimento backend.
+
+---
 
 ## 🚀 Tecnologias
-
-- Java
+- Java 17
 - Spring Boot
-- Spring Security
+- Spring Data JPA
+- Jakarta Validation
 - PostgreSQL
-- JWT
 - Maven
 
-## 📂 Estrutura do projeto
+---
 
-controller → endpoints da API  
-service → regras de negócio  
-repository → acesso ao banco de dados  
-model → entidades do sistema  
-security → autenticação e autorização
+## 📂 Estrutura do projeto
+- `controller/` → endpoints da API  
+- `model/` → entidades  
+- `repository/` → acesso ao banco  
+- `resources/` → configurações  
+
+---
 
 ## ▶️ Como executar
 
-Clone o repositório
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/alexandremdeveloper/fitness-tracker-api.git
 
-git clone https://github.com/seuusuario/fitness-tracker-api
-Entre na pasta do projeto
-
+### 2. Entrar na pasta
 cd fitness-tracker-api
-Execute
-mvn spring-boot:run
+
+### 3. Rodar a aplicação
+Windows: cd fitness-tracker-api
+Linux mvnw.cmd spring-boot:run
+
+Api disponível em
+http://localhost:8080
 
 ## 🔗 Endpoints
+Alunos
 
-POST /users → criar usuário  
-POST /auth/login → autenticação  
-GET /workouts → listar treinos  
-POST /workouts → criar treino
+GET /alunos → listar todos
+GET /alunos/{id} → buscar por ID
+POST /alunos → criar aluno
+PUT /alunos/{id} → atualizar aluno
+DELETE /alunos/{id} → deletar aluno
 
-## 📦 Exemplo de criação de usuário
-
-POST /users
+### Exemplo de criação de um aluno:
 
 {
- "name": "Alex",
- "email": "alex@email.com",
- "password": "123456"
+  "nome": "Alexandre",
+  "tipoTreino": "intermediário",
+  "idade": 28,
+  "peso": 82.5
 }
 
-## 📈 Melhorias futuras
+### 📈 Melhorias futuras
 
-- testes automatizados
-- dockerização da aplicação
-- deploy em cloud
-
-API documentation: /swagger-ui.html
+Autenticação com JWT
+Cadastro de treinos
+Relacionamento aluno ↔ treino
+Documentação com Swagger
+Deploy em cloud
