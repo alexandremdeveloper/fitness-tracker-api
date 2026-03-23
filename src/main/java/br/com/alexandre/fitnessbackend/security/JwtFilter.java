@@ -22,8 +22,14 @@ public class JwtFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain filterChain)
             throws ServletException, IOException {
-
+        
+        String path = request.getRequestURI();
         String header = request.getHeader("Authorization");
+
+        if (path.startsWith("/auth") || path.startsWith("/swagger") || path.startsWith("/v3/api-docs")) {
+        filterChain.doFilter(request, response);
+        return;
+}
 
         if (header != null && header.startsWith("Bearer ")) {
             String token = header.substring(7);
