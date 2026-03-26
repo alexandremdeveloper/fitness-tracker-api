@@ -6,12 +6,14 @@ C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexan
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\service\TreinoService.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\exception\ResourceNotFoundException.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\controller\TreinoExercicioController.java
+C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\dto\LoginRequestDTO.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\model\TreinoExercicio.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\repository\MealRepository.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\security\JwtFilter.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\service\TreinoExercicioService.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\service\ExercicioService.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\controller\AuthController.java
+C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\service\AlunoService.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\exception\GlobalExceptionHandler.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\model\Aluno.java
 C:\Users\alexandre.d.martins\Desktop\fitness-backend\src\main\java\br\com\alexandre\fitnessbackend\controller\AlunoController.java

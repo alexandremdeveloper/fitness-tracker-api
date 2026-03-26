@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/alunos")
 public class AlunoController {
@@ -44,8 +45,8 @@ public class AlunoController {
                 .map(aluno -> {
                     aluno.setNome(alunoDetails.getNome());
                     aluno.setTipoTreino(alunoDetails.getTipoTreino());
-                    aluno.setIdade(alunoDetails.getIdade());
-                    aluno.setPeso(alunoDetails.getPeso());
+                    aluno.setPesoInicial(alunoDetails.getPesoInicial());
+                    aluno.setPesoAtual(alunoDetails.getPesoAtual());
                     Aluno atualizado = alunoRepository.save(aluno);
                     return ResponseEntity.ok().body(atualizado);
                 })
